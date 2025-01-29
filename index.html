@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>You can navigate using the menu at the top of the website or simply scroll to learn more about me, 
+                explore my projects, and to contact me.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="full-width">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 01">
+                    <p>ML Project-Click this image to know more about it</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 02">
+                    <p>Portfolio Website-Click this image to know more about it</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Project 03">
+                    <p>Weather forecasting-Click this image to know more about it</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="full-width">
+        <div class="content narrow">
+            <h2>About Me</h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-button active-tab" data-tab="summary">Summary</button>
+                    <button class="tab-button" data-tab="skills">Skills & Education</button>
+                    <button class="tab-button" data-tab="experience">Experience</button>
+                </div>
+                <div class="tab-content">
+                    <!-- Summary Tab -->
+                    <div id="summary" class="tab-pane active-content">
+                        <p>Hi!
+                            This is Yaswanth Sai Kiran</br>
+                            I am passionate about AI, website development, and continuous 
+                            learning. I enjoy exploring new technologies, enhancing my skills
+                            , and staying up to date with the latest advancements in the 
+                            field. Whether developing websites, experimenting with AI, 
+                            or diving into new topics, I am always seeking opportunities 
+                            to grow, innovate, and expand my knowledge.</p>
+                    </div>
+                    
+                    <!-- Skills & Education Tab -->
+                    <div id="skills" class="tab-pane">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Web Development(HTML, CSS & JS)</li>
+                            <li>Python and ML</li>
+                            <li>Pega</li>
+                        </ul>
+                        <h3>Education</h3>
+                        <p>Bachelor's Degree in Computer Science<br>
+                        Raghu Engineering College, 2019-2023
+                        CGPA of 8.95</p>
+                    </div>
+                    
+                    <!-- Experience Tab -->
+                    <div id="experience" class="tab-pane">
+                        <h3>Work History</h3>
+                        <div class="experience-item">
+                            <h4>Intern</h4>
+                            <p>Company Name • Virtusa</p>
+                            <p>Development team in creating Pega application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="full-width">
+        <div class="content narrow">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name *" required>
+                    <input type="text" placeholder="Last Name *" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Email *" required>
+                    <input type="tel" placeholder="Phone">
+                </div>
+                <textarea rows="5" placeholder="Message *" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="project-title">Project Title</h2>
+            <p><strong>Description:</strong> <span id="project-description">Description</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
