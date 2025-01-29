@@ -1,1 +1,1 @@
-# Modern_Portfolio
+A modern portfolio website featuring a smooth tab-based About Me section, a project showcase with a modal popup, and fully responsive navigation with smooth scrolling. The JavaScript-powered tabs allow dynamic content switching for Summary, Skills & Education, and Experience. The design includes transparent sections, interactive UI elements, and a clean, user-friendly layout.
